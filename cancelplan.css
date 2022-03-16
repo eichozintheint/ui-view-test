@@ -1,0 +1,133 @@
+:root{
+    --whiteblue:#EBEBFB;
+    --navy:#2E2E58;
+    --red:#E33454;
+    --pink:#ED9AAA;
+    --violet1:#8f8fa6ce;
+    --violet2:#767493;
+}
+
+*{
+    font-family:sans-serif;
+    /* box-sizing:border-box; */
+}
+
+body{
+    background-color:var(--whiteblue);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.container{
+    width:200px;
+    height:380px;
+    background-color:#fff;
+    color:var(--navy);
+    padding:25px 50px;
+    border-radius:10px;
+
+    position:relative;
+}
+
+.container::before{
+    content:'';
+
+    width:100%;
+    height:100%;
+    background-color:var(--violet1);
+    border-radius:10px;
+
+    position:absolute;
+    top:-40px;
+    left:-45px;
+
+    z-index:-1;
+}
+
+.container > h2{
+    font-family:serif;
+    margin:0;
+}
+
+.container > i{
+    color:var(--navy);
+    font-size:20px;
+
+    position:absolute;
+    top:30px;
+    right:25px;
+}
+
+.container > .letter{
+    font-size:13px;
+}
+
+.container > .question{
+    font-size:12px;
+    font-weight:bold;
+    margin-top:25px;
+}
+
+.reason{
+    /* background-color:orange;
+    border:1px solid black; */
+
+    position:relative;
+}
+
+.container > form > .reason > label{
+    font-size:11.2px;
+
+    position:absolute;
+    top:50%;
+
+    transform:translateY(-50%);
+}
+
+.type-for-confirm{
+    margin-top:18px;
+    margin-bottom:18px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.type-for-confirm > label{
+    display:block;
+    margin-bottom:8px;
+}
+
+.type-for-confirm > .cancel{
+    width:200px;
+    box-sizing:border-box;
+    padding:5px;
+    border:1px solid var(--navy);
+    border-radius:3px;
+}
+
+.type-for-confirm > .cancel:focus{
+    outline:0;
+}
+
+.container  .cancel-btn{
+    width:100%;
+    background-color:var(--navy);
+    color:var(--whiteblue);
+    padding:7px;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+.container > span{
+    font-size:11px;
+    color:var(--violet2);
+    margin-left:35%;
+    display:block;
+    margin-top:10px;
+}

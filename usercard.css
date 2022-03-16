@@ -1,0 +1,137 @@
+:root{
+    --whiteblue:#F3FBFB;
+    --navyblue:#33436C;
+    --navybluetransparent:#33436ce1;
+    --violet:#9DA3B9;
+    --pink:#CBA9AB;
+    --brown1:#BE8F81;
+    --brown2:#9A7476;
+    --white:#fff;
+}
+
+*{
+    font-family:sans-serif;
+}
+
+body{
+    background-color:var(--whiteblue);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.card{
+    width:300px;
+    height:320px;
+    background-color:var(--white);
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+    position:relative;
+}
+
+.card::before{
+    content:'';
+
+    width:280px;
+    height:300px;
+    background-color:var(--navybluetransparent);
+    border-radius:10px;
+
+    position:absolute;
+    top:30px;
+    left:10px;
+
+    z-index:-1;
+}
+
+.card > .profile{
+    width:60px;
+    height:60px;
+    background-color:var(--navybluetransparent);
+    border-radius:50%;
+
+    position:absolute;
+    top:30px;
+    left:30px;
+}
+
+.imgbox{
+    position:absolute;
+    top:6px;
+    left:6px;
+    right:6px;
+    bottom:6px;
+}
+
+.imgbox > img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.content{
+    width:170px;
+    height:260px;
+    /* background-color:skyblue; */
+    color:var(--navyblue);
+    font-size:12px;
+    font-weight:bold;
+
+    position:absolute;
+    top:30px;
+    right:30px;
+}
+
+.content > h2{
+    margin:10px 0 5px 0;
+    font-family:serif;
+}
+
+.status{
+    display:block;
+    margin-bottom:18px;
+}
+
+.rating,.review,.student{
+    display:block;
+    margin-bottom:7px;
+}
+
+.rating > i{
+    margin-right:6.5px;
+}
+
+.review > i{
+    margin-right:7px;
+    margin-left:1px;
+}
+
+.student > i{
+    margin-right:7px;
+    margin-left:2px;
+}
+
+.showmore-btn{
+    background-color:transparent;
+    font-size:11px;
+    font-weight:bold;
+    border:1px solid var(--navyblue);
+    border-radius:2px;
+    padding:5px 8px;
+    cursor:pointer;
+
+    transition:all 0.3s;
+}
+
+.showmore-btn:hover{
+    background-color:var(--navyblue);
+    color:#fff;
+}

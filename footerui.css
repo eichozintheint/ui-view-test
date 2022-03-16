@@ -1,0 +1,162 @@
+:root{
+    --white:#F2F3FB;
+    --navy:#1C2444;
+    --purple:#AD658E;
+    --blue:#4594C4;
+    --gray:#9DA2AE;
+    --orange:#E49852;
+}
+
+*{
+    font-size:12px;
+}
+
+body{
+    background-color:var(--white);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.main-container{
+    width:900px;
+    height:280px;
+    background-color:var(--navy);
+    border-radius:10px;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.3);
+
+    position:relative;
+}
+
+.info,.resource,.company{
+    width:100px;
+    /* background-color:orange; */
+    color:var(--gray);
+}
+
+.info{
+    position:absolute;
+    top:40px;
+    left:80px;
+}
+
+.resource{
+    position:absolute;
+    top:40px;
+    left:220px;
+}
+
+.company{
+    position:absolute;
+    top:40px;
+    right:420px;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+ul > li{
+    margin-bottom:7px;
+}
+
+ul > li:first-child{
+    color:var(--white);
+    margin-bottom:13px;
+}
+
+ul > li:not(li:first-child){
+    font-family:sans-serif;
+}
+
+.subscribe{
+    width:280px;
+    height:140px;
+    /* background-color:tomato; */
+    color:var(--white);
+    
+    position:absolute;
+    bottom:62px;
+    right:80px;
+}
+
+.subscribe label{
+    font-size:14px;
+    font-family:sans-serif;
+
+    display:block;
+    margin-bottom:10px;
+}
+
+.subscribe .email{
+    width:64%;
+    background-color:transparent;
+    color:var(--white);
+    border:1px solid var(--gray);
+    padding:8px;
+    border-radius:5px;
+}
+
+.email::placeholder{
+    color:var(--white);
+}
+
+.subscribe .email:focus{
+    outline:none;
+}
+
+.subscribe .btn{
+    background-color:var(--white);
+    color:var(--navy);
+    font-weight:bold;
+    font-size:10px;
+    padding:10px;
+    border:0;
+    border-radius:4px;
+}
+
+.subscribe > .follow-us{
+    width:120px;
+    height:55px;
+    /* background-color:red; */
+
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.follow-us > span{
+    font-family:sans-serif;
+    font-size:14px;
+}
+
+.follow-us > .facebook,.follow-us > .twitter,.follow-us > .instagram{
+    width:30px;
+    height:30px;
+    background-color:orange;
+    border-radius:2px;
+}
+
+.facebook{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.twitter{
+    position:absolute;
+    bottom:0;
+    left:35px;
+}
+
+.instagram{
+    position:absolute;
+    bottom:0;
+    left:70px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pricing Card</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/pricingcard.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+        <div class="pricing-card">
+            
+            <h2>Try FREE for 4 weeks</h2>
+
+            <p>We uncover the facts around the clock,all over the globe.</p>
+
+            <div class="monthly-plan" id="monthly-plan">
+                <input type="radio" name="radio" id="checkformonth" class="m-plan" value="month_plan" onclick="document.getElementById('monthly-plan').style.borderColor='#00205b'" />
+                <div class="details-about-plan">
+                    <span>MONTHLY</span>
+                    <span>4 weeks for free</span>
+                    <span>Then $3 every month for the first year</span>
+                </div>
+            </div>
+
+            <div class="yearly-plan" id="yearly-plan">
+                <input type="radio" name="radio" id="checkforyear" class="y-plan" value="year_plan" onclick="document.getElementById('yearly-plan').style.borderColor='#00205b'"  />
+                <div class="bestval-btn">Best value</div>
+                <div class="details-about-plan">
+                    <span>YEARLY</span>
+                    <span>4 weeks for free</span>
+                    <span>Then $30 for the first year</span>
+                </div>
+            </div>
+
+            <button class="continue-btn">Continue</button>
+            <button class="paypal-continue-btn">Continue with <i class="fa-brands fa-paypal"></i> PayPal</button>
+
+            <a href="#">View more offers</a>
+
+        </div>
+
+        <script type="text/javascript">
+
+            let checkformonth=document.getElementById('checkformonth');
+            let checkforyear=document.getElementById('checkforyear');
+            let monthlyplan=document.getElementById('monthly-plan');
+            let yearlyplan=document.getElementById('yearly-plan');
+
+            
+
+            function planformonthly(){
+                if(monthlyplan.style.borderColor=="#c4dff6"){
+                    monthlyplan.style.borderColor="#00205b";
+                }else{
+                    monthlyplan.style.borderColor="#c4dff6";
+                }
+            }
+
+        </script>
+
+    </body>
+</html>

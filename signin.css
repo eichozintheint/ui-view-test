@@ -1,0 +1,161 @@
+:root{
+    --violet1:#A88FE6;
+    --violet2:#695FBA;
+    --gray1:#DEDEE6;
+    --gray2:#5B5D69;
+    --black:#1F2D3C;
+    --red:#FC2D25;
+}
+
+body{
+    font-family:sans-serif;
+    background-color:var(--violet1);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.signin-card{
+    width:620px;
+    height:470px;
+    background-color:#fff;
+    border-radius:40px;
+
+    position:relative;
+}
+
+.signin-card > h2{
+    padding:0;
+    margin:0;
+
+    position:absolute;
+    top:80px;
+    left:80px;
+}
+
+.signin-card > .continuelink{
+    width:250px;
+    height:320px;
+    /* background-color:skyblue; */
+
+    position:absolute;
+    top:80px;
+    right:80px;
+}
+
+.continuelink a{
+    width:200px;
+    height:40px;
+    color:#000;
+    text-decoration:none;
+    font-size:12px;
+    font-weight:600;
+    border:1px solid var(--gray2);
+    border-radius:2px;
+    
+    text-align:center;
+    line-height:40px;
+}
+
+.continuelink a:first-of-type{
+    position:absolute;
+    top:0;
+    left:25px;
+}
+
+.continuelink a:first-of-type i{
+    font-size:22px;
+    margin-right:8px;
+}
+
+.continuelink a:last-of-type{
+    position:absolute;
+    top:50px;
+    left:25px;
+}
+
+.continuelink a:last-of-type i{
+    font-size:16px;
+    margin-right:8px;
+}
+
+.continuelink > .lefthr,.continuelink > .righthr{
+    width:80px;
+    height:1px;
+    background-color:var(--gray2);
+    border:none;
+}
+
+.continuelink > .lefthr{
+    position:absolute;
+    top:130px;
+    left:25px;
+}
+
+.continuelink > .righthr{
+    position:absolute;
+    top:130px;
+    right:25px;
+}
+
+.continuelink > span{
+    color:var(--gray2);
+    font-size:14px;
+    font-weight:bold;
+    position:absolute;
+    top:130px;
+    left:115px;
+}
+
+.continuelink > .form-div{
+    width:200px;
+    /* background-color:yellow; */
+
+    position:absolute;
+    bottom:20px;
+    right:25px;
+}
+
+.form-div  label{
+    font-size:12px;
+    font-weight:bold;
+
+    display:block;
+    margin-bottom:10px;
+}
+
+.form-div .email{
+    width:200px;
+    height:40px;
+    box-sizing:border-box;
+    background-color:none;
+    /* padding:5px 0; */
+    border:1px solid var(--gray2);
+    border-radius:2px;
+
+    display:block;
+    margin-bottom:10px;
+}
+
+.form-div .email:focus{
+    outline:none;
+}
+
+.form-div button{
+    width:200px;
+    height:40px;
+    background-color:var(--violet2);
+    color:#fff;
+    border:none;
+    border-radius:2px;
+    cursor:pointer;
+}
+
+.form-div button:active{
+    transform:scale(0.98);
+}

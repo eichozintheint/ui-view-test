@@ -1,0 +1,156 @@
+:root{
+    --blue:#EBF3FB;
+    --yellow:#EBB34B;
+    --brown:#7F7669;
+    --black:#131B2B;
+    --gray1:#8D9299;
+    --gray2:#747C84;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+    background-color:var(--blue);
+
+    margin:0;
+    overflow:hidden;
+}
+
+.card1{
+    width:240px;
+    height:280px;
+    background-color:var(--black);
+    color:#fff;
+    border-radius:15px;
+
+   position:absolute;
+   top:20px;
+   left:330px;
+}
+
+.card1 > h3{
+    font-family:serif;
+    font-size:25px;
+    padding:0;
+    margin:0;
+
+    position:absolute;
+    top:30px;
+    left:40px;
+}
+
+.card1 > h3 > span{
+    margin-left:45px;
+}
+
+.card1 > p{
+    font-size:14px;
+
+    position:absolute;
+    top:90px;
+    left:44px;
+}
+
+.card1 form .amount{
+    width:70px;
+    background-color:#111;
+    color:#fff;
+    text-align:center;
+    font-size:18px;
+    font-family:serif;
+    border:none;
+
+    /* outline-width:1px;
+    outline-style:solid;
+    outline-color:var(--gray2); */
+
+            /* s   s     c */
+    outline:1px solid var(--gray2);
+
+    border-radius:5px;
+    padding:8px;
+
+    position:absolute;
+    top:140px;
+    left:85px;
+}
+
+.card1 form button{
+    background-color:var(--yellow);
+    font-weight:bold;
+    border:none;
+    border-radius:10px;
+    padding:17px 50px;
+
+    position:absolute;
+    bottom:30px;
+    left:40px;
+}
+
+.card2{
+    width:270px;
+    height:480px;
+    background-color:var(--black);
+    color:#fff;
+    border-radius:18px;
+    padding:30px 40px;
+
+    position:absolute;
+    top:80px;
+    right:410px;
+}
+
+.card2 > h3{
+    font-family:serif;
+    font-size:25px;
+    padding:0;
+    margin:0;
+}
+
+.card2 > p{
+    font-size:12px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.card2 > p > span{
+    font-family:serif;
+    font-size:20px;
+
+    display:block;
+    margin-top:5px;
+}
+
+.card2 > form > label{
+    font-size:12px;
+    
+    display:block;
+    margin-bottom:8px;
+}
+
+.card2 > form > input{
+    width:100%;
+    background-color:#111;
+    border:none;
+    outline:1px solid var(--gray1);
+    border-radius:5px;
+    font-size:12px;
+    padding:15px;
+
+    margin-bottom:15px;
+}
+
+
+.card2 > form > button{
+    width:100%;
+    background-color:var(--yellow);
+    font-weight:bold;
+    border:none;
+    padding:17px;
+    border-radius:8px;
+
+    margin-top:15px;
+}

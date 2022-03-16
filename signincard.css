@@ -1,0 +1,148 @@
+:root{
+    --violet1:#E6E4DD;
+    --violet2:#B4B4C4;
+    --violet3:#A2A2C0;
+    --violet4:#8C8CA4;
+    --violet5:#9494AC;
+    --blue:#3F3F6E;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+    background-color:var(--violet2);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.card{
+    width:300px;
+    height:470px;
+    background-color:var(--violet1);
+    border-radius:30px;
+
+    position:relative;
+}
+
+.card::before{
+    content:'';
+
+    width:120px;
+    height:150px;
+    background-color:var(--violet5);
+
+    position:absolute;
+    top:-60px;
+    left:-70px;
+
+    z-index:-1;
+}
+
+.card::after{
+    content:'';
+
+    width:200px;
+    height:250px;
+    background-color:var(--violet4);
+
+    position:absolute;
+    bottom:-60px;
+    right:-100px;
+
+    z-index:-1;
+}
+
+.signin-box{
+    background-color:#f4f4f4;
+    border-radius:10px;
+
+    position:absolute;
+    top:20px;
+    left:20px;
+    bottom:20px;
+    right:20px;
+}
+
+.card .signin-box .content{
+    padding:40px 30px;
+}
+
+.content h3{
+    font-size:22px;
+
+    padding:0;
+    margin:0;
+    margin-bottom:20px;
+}
+
+.content form{
+    font-size:12px;
+}
+
+.content form label{
+    color:#666;
+    font-weight:600;
+}
+
+.content form .phno,.content form .dob{
+    padding:10px 18px;
+    border:none;
+    border-radius:2px;
+    outline-style: solid;
+    outline-width: 1.5px;
+    outline-color: var(--violet3);
+
+   
+}
+
+.content form .phno{
+    margin-top:5px;
+    margin-bottom:30px;
+}
+
+.content form .dob{
+    margin-top:5px;
+    margin-bottom:25px;
+}
+
+.content form .checkbox{
+    transform:scale(1.5);
+
+    position:absolute;
+    top:246px;
+    left:30px;
+}
+
+.content form .checkbox + label{
+    display:inline-block;
+    margin-bottom:30px;
+    margin-left:22px;
+}
+
+.content form button{
+    width:100%;
+    color:#fff;
+    padding:12px;
+    background-color:var(--blue);
+    border:0;
+    border-radius:2px;
+
+    margin-bottom:40px;
+
+}
+
+.content .link{
+    font-size:12px;
+    margin-left:50%;
+    transform:translate(-50%);
+}
+

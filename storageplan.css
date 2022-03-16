@@ -1,0 +1,277 @@
+:root{
+    --violet:#C7CACC;
+    --blue:#7D8EB2;
+    --gray:#9494943a;
+    --black:#07080D;
+    --lightbrown:#967864;
+    --brown:#7C5034;
+    --white:#eceaea;
+}
+
+*{
+    font-family:sans-serif;
+}
+
+body{
+    background-color:var(--violet);
+}
+
+.storage-container{
+    width:350px;
+    height:300px;
+    background-color:var(--white);
+    border-radius:15px;
+
+    position:absolute;
+    top:130px;
+    left:250px;
+}
+
+.storage-container::before{
+    content:'';
+
+    width:90%;
+    height:50%;
+    background-color:var(--gray);
+    border:1px solid var(--white);
+    border-radius:20px;
+
+    position:absolute;
+    top:-12px;
+    left:12px;
+
+    z-index:-1;
+}
+
+.storage-container > .left-arrow{
+    width:35px;
+    height:35px;
+    background-color:#fff;
+    border-radius:8px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:absolute;
+    top:30px;
+    left:30px;
+}
+
+.storage-container > .title{
+    font-weight:bold;
+    position:absolute;
+    top:40px;
+    left:75px;
+}
+
+.storage-container > .circle-box{
+    width:180px;
+    height:180px;
+    /* background-color:tomato; */
+
+    position:absolute;
+    top:80px;
+    left:30px;
+}
+
+.circle-box > .circle1{
+    width:180px;
+    height:180px;
+    background-color:transparent;
+    border:1px solid #fff;
+    border-radius:50%;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:1;
+}
+
+.circle-box > .circle2{
+    width:170px;
+    height:170px;
+    background:conic-gradient(
+        var(--blue) 10%,
+        rgb(147, 201, 223) 0
+    );
+    border-radius:50%;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:2;
+}
+
+.storage-container > .total-storage{
+    position:absolute;
+    top:95px;
+    right:40px;
+}
+
+.storage-container > .used-storage{
+    color:var(--blue);
+    position:absolute;
+    bottom:115px;
+    right:60px;
+}
+
+.total-storage > h3,.used-storage > h3{
+    padding:0;
+    margin:0;
+    font-size:16px;
+}
+
+.total-storage > span,.used-storage > span{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.storage-container > .detail-btn{
+    background-color:var(--black);
+    color:var(--white);
+    border:none;
+    font-size:12px;
+    padding:10px 15px;
+    border-radius:7px;
+
+    position:absolute;
+    bottom:65px;
+    right:30px;
+}
+
+.plan-container{
+    width:280px;
+    height:480px;
+    background-color:var(--gray);
+    border:1px solid var(--white);
+    border-radius:15px;
+
+    position:absolute;
+    top:50px;
+    right:310px;
+}
+
+.plan-container > span{
+    font-weight:bold;
+
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+.plan-container > .plan1,.plan2,.plan3{
+    width:320px;
+    height:130px;
+    border-radius:15px;
+}
+
+.plan-container > .plan1{
+    background-color:var(--black);
+
+    position:absolute;
+    top:57px;
+    left:-20px;
+}
+
+.plan1 > .block{
+    width:20px;
+    height:3px;
+    background-color:orange;
+    border-radius:5px;
+
+    position:absolute;
+    top:40px;
+    left:40px;
+}
+
+.plan1 > .current-plan{
+    color:#fff;
+    position:absolute;
+    top:50px;
+    left:40px;
+}
+
+.plan1 h3{
+    margin:0;
+}
+
+.plan1 span{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.plan2{
+    background-color:var(--white);
+
+    position:absolute;
+    bottom:155px;
+    left:-20px;
+}
+
+.plan2 > .block{
+    width:20px;
+    height:3px;
+    background-color:rgb(108, 178, 206);
+    border-radius:5px;
+
+    position:absolute;
+    top:40px;
+    left:40px;
+}
+
+.plan3{
+    background-color:var(--white);
+
+    position:absolute;
+    bottom:15px;
+    left:-20px;
+}
+
+.plan3 > .block{
+    width:20px;
+    height:3px;
+    background-color:rgb(10, 131, 10);
+    border-radius:5px;
+
+    position:absolute;
+    top:40px;
+    left:40px;
+}
+
+.plan2 > h3,.plan3 > h3{
+    margin:0;
+    padding:0;
+
+    position:absolute;
+    top:50px;
+    left:40px;
+}
+
+.plan2 > button,.plan3 > button{
+    background-color:var(--black);
+    color:#fff;
+    border:0;
+    padding:10px 16px;
+    border-radius:8px;
+    letter-spacing:1px;
+
+    position:absolute;
+    top:40px;
+    right:40px;
+}
+
+.plan2 > span,.plan3 > span{
+    font-size:10px;
+    font-weight:600;
+    color:var(--blue);
+    position:absolute;
+    top:83px;
+    right:40px;
+}

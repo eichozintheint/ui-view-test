@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Results</title>
+        <link href="search.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <div class="search-box">
+
+            <input type="text" name="search" id="search" class="search-input" autocomplete="off" />
+
+            <select class="language">
+                <option selected>ENG</option>
+                <option>Japan</option>
+                <option>Korea</option>
+                <option>China</option>
+                <option>Myanmar</option>
+            </select>
+
+            <div class="search-icon" onclick="document.getElementById('dropdown-search-result').style.opacity=1">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="dropdown" id="dropdown-search-result">
+
+                <div class="result1">
+                    <div class="imgbox">
+                        <img src="img/sky.JPG" alt="sky"  />
+                    </div>
+                    <span class="caption">Nature</span>
+                    <span class="sub-caption">Colorful sky</span>
+                </div>
+
+                <div class="result2">
+                    <div class="imgbox">
+                        <img src="img/rain.JPG" alt="rain"  />
+                    </div>
+                    <span class="caption">Nature</span>
+                    <span class="sub-caption">Rainy</span>
+                </div>
+
+                <div class="result3">
+                    <div class="imgbox">
+                        <img src="img/cycle.JPG" alt="cycle"  />
+                    </div>
+                    <span class="caption">Nature</span>
+                    <span class="sub-caption">Motorcycle with nature</span>
+                </div>
+
+                <div class="result4">
+                    <div class="imgbox">
+                        <img src="img/store.JPG" alt="store"  />
+                    </div>
+                    <span class="caption">Nature</span>
+                    <span class="sub-caption">Store with night view</span>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </body>
+</html>

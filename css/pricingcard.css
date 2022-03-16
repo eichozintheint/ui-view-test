@@ -1,0 +1,134 @@
+:root{
+    --navy:#00205b;
+    --blue:#0077c8;
+    --black:#050f2c;
+    --white:#f3f4f7;
+    --lightblue:#c4dff6;
+}
+
+*{
+    font-family:Arial;
+}
+
+body{
+    background:var(--lightblue);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.pricing-card{
+    width:235px;
+    background-color:var(--white);
+    padding:40px 45px;
+    border-radius:15px;
+}
+
+.pricing-card > h2{
+    text-align:center;
+    font-family:serif;
+    padding:0;
+    margin:0;
+    margin-bottom:7px;
+}
+
+.pricing-card > p{
+    text-align:center;
+    font-size:14px;
+    /* font-weight:bold; */
+    padding:0;
+    margin:0;
+}
+
+.pricing-card > .monthly-plan,.pricing-card > .yearly-plan{
+    width:100%;
+    height:100px;
+    /* background:yellow; */
+    border:2px solid var(--lightblue);
+    border-radius:5px;
+    margin-top:20px;
+
+    position:relative;
+}
+
+.m-plan,.y-plan{
+    width:18px;
+    height:18px;
+    position:absolute;
+    top:38px;
+    left:8px;
+}
+
+.y-plan{
+    position:absolute
+}
+
+.monthly-plan > .details-about-plan{
+    position:absolute;
+    top:25px;
+    left:40px;
+}
+
+.yearly-plan > .details-about-plan{
+    position:absolute;
+    top:35px;
+    left:40px;
+}
+
+.details-about-plan > span{
+    display:block;
+    font-size:11px;
+    margin-bottom:3px;
+}
+
+.details-about-plan > span:nth-of-type(2){
+    font-size:16px;
+}
+
+.yearly-plan > .bestval-btn{
+    display:inline-block;
+    background-color:var(--blue);
+    color:var(--white);
+    font-size:12px;
+    padding:3px 8px;
+    border-radius:10px;
+
+    position:absolute;
+    top:10px;
+    left:40px;
+}
+
+.continue-btn,.paypal-continue-btn{
+    width:75%;
+    font-size:12px;
+    font-weight:600;
+    display:block;
+    box-sizing:border-box;
+    padding:10px 15px;
+    border-radius:20px;
+    /* margin-top:15px; */
+    margin:17px auto;
+    cursor:pointer;
+}
+
+.continue-btn{
+    background-color:var(--navy);
+    color:var(--white);
+    border:1.5px solid var(--navy);
+}
+
+.paypal-continue-btn{
+    background-color:var(--white);
+    color:var(--navy);
+    border:1.5px solid var(--lightblue);
+}
+
+.pricing-card > a{
+    font-size:12px;
+    margin-left:75px;
+}

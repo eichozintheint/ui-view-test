@@ -1,0 +1,149 @@
+:root{
+    --whiteblue:#F3F3FB;
+    --navyblue:#1F275E;
+    --violet1:#ADAFCC;
+    --violet2:#BCBCCC;
+    --violet3:#8C94AC;
+    --violet4:#9C9FB4;
+}
+
+*{
+    font-family:sans-serif;
+}
+
+body{
+    background-color:var(--whiteblue);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.main-card{
+    width:280px;
+    height:380px;
+    background-color:#fff;
+    border-radius:25px;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+
+    position:relative;
+}
+
+.basic-gallery{
+    width:70px;
+    height:70px;
+    color:var(--navyblue);
+    border-radius:50%;
+    border:2px solid var(--violet2);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:absolute;
+    top:30px;
+    left:50%;
+
+    transform:translate(-50%);
+}
+
+.basic-gallery  i{
+    font-size:23px;
+    display:block;
+    margin-bottom:2px;
+    margin-left:5px;
+}
+
+.basic-gallery  span{
+    font-size:12px;
+    font-weight:bold;
+}
+
+.price{
+    color:var(--navyblue);
+    /* background-color:red; */
+
+    position:absolute;
+    top:120px;
+    left:50%;
+    
+    transform:translate(-50%);
+}
+
+.price > span{
+    display:block;
+}
+
+.price > span:nth-of-type(1){
+    font-size:20px;
+    position:absolute;
+    top:7px;
+    left:5px;
+}
+
+.price > span:nth-of-type(2){
+    font-size:32px;
+    font-weight:bold;
+    margin-left:25px;
+}
+
+.price > span:nth-of-type(3){
+    font-size:10px;
+    font-weight:bold;
+}
+
+.download-qty{
+    width:220px;
+    /* background-color:red; */
+    display:flex;
+
+    position:absolute;
+    top:205px;
+    left:33px;
+}
+
+.one,.two,.three,.four{
+    width:35px;
+    height:35px;
+    color:var(--navyblue);
+    border:2px solid var(--violet2);
+    border-radius:12px;
+    margin:0 8px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.dld-per-month{
+    color:var(--navyblue);
+    font-size:12px;
+    font-weight:bold;
+
+    position:absolute;
+    bottom:113px;
+    left:50%;
+
+    transform:translate(-50%);
+}
+
+.sub-btn{
+    width:80%;
+    height:40px;
+    background-color:var(--navyblue);
+    color:var(--whiteblue);
+    font-size:13px;
+    border:none;
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    cursor:pointer;
+
+    position:absolute;
+    bottom:50px;
+    left:30px;
+}
+

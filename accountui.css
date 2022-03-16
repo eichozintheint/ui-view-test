@@ -1,0 +1,218 @@
+
+:root{
+    --skyblue:#D4E4EB;
+    --yellow:#D3963A;
+    --lightpurple:#AD9E9C;
+    --purple:#878399;
+    --navy:#44304C;
+    --gray:#6C7474;
+}
+
+body{
+    background-color:var(--skyblue);
+
+    margin:0;
+    overflow:hidden;
+}
+
+.aboutdiv{
+    width:230px;
+    height:130px;
+    background-color:#fff;
+    border-radius:20px;
+    margin:70px auto;
+
+    position:relative;
+}
+
+.aboutdiv > img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+
+    position:absolute;
+    top:-45px;
+    left:50%;
+
+    transform:translate(-50%);
+}
+
+.aboutdiv > h3{
+    padding:0;
+    margin:0;
+    letter-spacing:1px;
+
+    position:absolute;
+    top:60px;
+    left:50%;
+
+    transform:translate(-50%);
+}
+
+.aboutdiv > h3 ~ p{
+    font-family:sans-serif;
+    font-size:14px;
+
+    padding:0;
+    margin:0;
+    
+    position:absolute;
+    bottom:25px;
+    right:50%;
+
+    transform:translate(50%);
+}
+
+
+.permissiondiv{
+    width:250px;
+    height:220px;
+    background-color:#fff;
+    border-radius:20px;
+    padding:18px;
+
+    position:absolute;
+    top:290px;
+    left:25%;
+}
+
+/* .permissiondiv .innerdiv{
+    padding:30px;
+} */
+
+.permissiondiv .iconheading{
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+/* .iconheading i{
+    margin-right:5px;
+} */
+
+.iconheading span{
+    font-size:20px;
+    font-weight:600;
+    margin-left:5px;
+}
+
+.permissiondiv .inputstylebox{
+    background-color:var(--skyblue);
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:5px;
+    font-family:sans-serif;
+    font-size:14px;
+    padding:5px;
+
+    position:absolute;
+    top:55px;
+    left:40px;
+}
+
+.inputstylebox span{
+    font-weight:bold;
+}
+
+.permissiondiv p{
+    width:80%;
+    font-family:sans-serif;
+    font-size:14px;
+
+    position:absolute;
+    top:85px;
+    left:40px;
+}
+
+.permissiondiv button{
+    background-color:var(--navy);
+    color:#fff;
+    border:0;
+    border-radius:5px;
+    padding:7px 5px;
+
+    position:absolute;
+    bottom:30px;
+    left:40px;
+}
+
+
+.settingdiv{
+    width:50px;
+    height:200px;
+    background-color:var(--lightpurple);
+    border-radius:30px;
+
+    position:absolute;
+    top:255px;
+    right:450px;
+}
+
+.settingdiv > .contact,.monitor,.notification,.setting{
+    width:40px;
+    height:40px;
+    background-color:#f4f4f4;
+    border-radius:50%;
+}
+
+.settingdiv > .contact{
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+
+.settingdiv > .monitor{
+    position:absolute;
+    top:55px;
+    left:5px;
+}
+
+.settingdiv > .notification{
+    position:absolute;
+    bottom:55px;
+    left:5px;
+}
+
+.settingdiv > .setting{
+    position:absolute;
+    bottom:5px;
+    left:5px;
+}
+
+.settingdiv .contact i,.settingdiv .monitor i,
+.settingdiv .notification i,.settingdiv .setting i{
+    color:var(--gray);
+    font-size:20px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    transition:all 0.2s;
+}
+
+.settingdiv .notification .noti{
+    width:18px;
+    height:18px;
+    background-color:var(--yellow);
+    border-radius:50%;
+    font-family:sans-serif;
+    font-size:14px;
+
+    text-align:center;
+    line-height:18px;
+
+    position:absolute;
+    top:-3px;
+    right:-3px;
+}
+
+.contact:hover i,.monitor:hover i,
+.notification:hover i,.setting:hover i{
+    color:#000;
+}
+
+
+
