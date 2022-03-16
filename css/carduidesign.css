@@ -1,6 +1,7 @@
 :root{
     --yellow:#faee5a;
     --blue:#4b89ac;
+    --lightblue:#ace6f6;
     --gray:#f0f0f0;
     --navy:#071a52;
     --black:#000000;
@@ -10,7 +11,7 @@ body{
     background-color:var(--yellow);
     font-family:sans-serif;
 }
-
+                    /* ************Contributer Card************* */
 .contributer-card{
     width:220px;
     /* height:100px; */
@@ -19,8 +20,20 @@ body{
     padding:35px 25px;
 
     position:absolute;
-    top:120px;
-    left:200px;
+    top:110px;
+    left:350px;
+}
+
+.contributer-card::before{
+    content:'';
+    width:200px;
+    height:2px;
+    background-color:var(--navy);
+    filter:blur(7px);
+
+    position:absolute;
+    top:110%;
+    left:35px;
 }
 
 h3{
@@ -97,4 +110,125 @@ h3{
     display:flex;
     justify-content:center;
     align-items:center;
+}
+                /* ******************About Card************ */
+.about-card{
+    width:170px;
+    background-color:var(--blue);
+    color:var(--gray);
+    font-size:13px;
+    border-radius:30px;
+    padding:28px 23px;
+
+    position:absolute;
+    top:130px;
+    right:320px;
+}
+
+.about-card::before{
+    content:'';
+
+    width:140px;
+    height:3px;
+    background-color:var(--navy);
+    filter:blur(7px);
+
+    position:absolute;
+    top:105%;
+    left:40px;
+}
+
+.about-card > h3{
+    font-size:20px;
+}
+
+.about-card > span{
+    display:block;
+    margin-top:20px;
+}
+
+.about-card > span > i{
+    margin-right:5px;
+}
+
+.about-card > span:nth-of-type(2) > a{
+    color:var(--gray);
+}
+                /* **************Language Card********** */
+.language-card{
+    width:250px;
+    height:100px;
+    background-color:var(--blue);
+    border-radius:25px;
+
+    position:absolute;
+    top:370px;
+    left:470px;
+}
+
+.language-card::before{
+    content:'';
+
+    width:180px;
+    height:3px;
+    background-color:var(--navy);
+    filter:blur(7px);
+
+    position:absolute;
+    top:110%;
+    left:35px;
+}
+
+.language-card > h3{
+    position:absolute;
+    top:15px;
+    left:20px;
+}
+
+.language-card > .language-pointer-bar{
+    width:210px;
+    height:5px;
+    border-radius:15px;
+    background:linear-gradient(
+        90deg,
+        var(--lightblue) 40%,
+        var(--yellow) 0
+    );
+
+    position:absolute;
+    top:50px;
+    left:20px;
+}
+
+.python{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+}
+
+.javascript{
+    position:absolute;
+    bottom:20px;
+    left:85px;
+}
+
+.python > .bullet-for-python,.javascript > .bullet-for-javascript{
+    width:10px;
+    height:10px;
+    background-color:var(--lightblue);
+    border-radius:100%;
+}
+
+.javascript > .bullet-for-javascript{
+    background-color:var(--yellow);
+}
+
+.python > span,.javascript > span{
+    font-size:13px;
+    color:var(--gray);
+    cursor:pointer;
+
+    position:absolute;
+    top:-2px;
+    left:13px;
 }
