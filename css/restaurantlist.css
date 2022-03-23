@@ -1,0 +1,145 @@
+:root{
+    --navy:#03001a;
+    --darkblue:#24204f;
+    --pink:#fa14d0;
+    --purple:#d961fa;
+    --gray:#cbc0cf;
+    --blue:#62a2fb;
+    --green:#35c79b;
+    --skyblue:#6dc8fc;
+}
+
+*{
+    font-family:sans-serif;
+    color:var(--gray);
+}
+
+body{
+    background-color:var(--navy);
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0;
+    overflow:hidden;
+}
+
+.main-container{
+    width:250px;
+    background-color:var(--darkblue);
+    border-radius:10px;
+    padding:30px;
+
+    position:relative;
+}
+
+.main-container::before{
+    content:'';
+
+    width:97%;
+    height:70%;
+    background:linear-gradient(
+        -225deg,
+        var(--pink),
+        var(--purple)
+    );
+    border-radius:0 25px 0 25px; 
+
+    position:absolute;
+    top:-50px;
+    left:-50px;
+
+    z-index:-1;
+}
+
+.main-container > h2,.main-container h4{
+    padding:0;
+    margin:0;
+}
+
+.search-area,.result-one,.result-two{
+    margin-top:25px;
+    font-size:14px;
+}
+
+.result-two{
+    margin-bottom:25px;
+}
+
+.search-area > label{
+    font-size:12px;
+    display:block;
+    margin-bottom:5px;
+}
+
+.search-area > .postal-code{
+    width:75px;
+    padding:7px;
+    background-color:transparent;
+    border:1px solid var(--gray);
+    border-radius:3px;
+}
+
+.postal-code:focus{
+    outline:none;
+}
+
+.search-area > span{
+    font-size:13px;
+    color:var(--blue);
+    margin-left:8px;
+}
+
+.search-area > span > i{
+    color:var(--blue);
+    font-size:15px;
+    margin-right:4px;
+}
+
+.result-one,.result-two{
+    position:relative;
+}
+
+.location,.time{
+    display:block;
+    margin-top:7px;
+}
+
+.time > i{
+    margin-right:5px;
+}
+
+.open_close-btn{
+    font-size:8px;
+    color:#fff;
+    text-transform:uppercase;
+    border-radius:8px;
+    border:none;
+    padding:3px;
+
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.result-one > .open_close-btn{
+    background-color:var(--pink);
+}
+
+.result-two > .open_close-btn{
+    background-color:var(--green);
+}
+
+.view-all-btn{
+    width:100%;
+    box-sizing:border-box;
+    background-color:var(--blue);
+    color:#fff;
+    border:none;
+    border-radius:3px;
+    padding:8px 0;
+    cursor:pointer;
+}
+
