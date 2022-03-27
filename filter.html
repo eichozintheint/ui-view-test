@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Filter</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/filter.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        
+        <div class="select-box-container">
+            <select class="artworks" onclick="document.getElementById('drop-down-box').style.display='block'">
+                <option disabled selected>Artworks</option>
+            </select>
+
+            <select class="all">
+                <option disabled selected>All</option>
+                <option>one</option>
+                <option>two</option>
+                <option>three</option>
+            </select>
+
+            <select class="all-tags">
+                <option disabled selected>All tags</option>
+                <option>one</option>
+                <option>two</option>
+                <option>three</option>
+            </select>
+        </div>
+
+        <div class="topic-container">
+                <div class="topic-one">Latest</div>
+                <div class="topic-two">Categories</div>
+                <div class="topic-three">Top</div>
+        </div>
+
+        <div class="drop-down-box" id="drop-down-box">
+
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" name="search" id="search" class="search-control" placeholder="Search" />
+            </div>
+
+            <span class="category-heading">all categories</span>
+
+            <ul class="list-one">
+                <li>Artwork</li>
+                <li>Support</li>
+                <li>Coding</li>
+                <li>Contests</li>
+            </ul>
+
+            <ul class="list-two">
+                <li>Game Engine</li>
+                <li>Jobs</li>
+                <li>General Fourms</li>
+                <li>Promotions</li>
+            </ul>
+
+        </div>
+
+    </body>
+</html>
